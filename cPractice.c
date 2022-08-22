@@ -4,6 +4,7 @@
 //C is a statically typed language
 
 #include <stdio.h>          //standard I/O library
+#include <string.h>         //string library
 
 int main(void){             //void arguments, return int
   printf("Hello World!\n");   //function invocation
@@ -71,5 +72,21 @@ int main(void){             //void arguments, return int
   for(int i = 0; i <= 10; i+= 2){
     printf("For Loop: %u \n",i);
   }
-  
+
+  int j = 10;
+  do{
+    printf("DoWhile: %u \n",j);
+    j -= 2;
+  }while(j >0);
+
+  //            ARRAYS
+  int prices[5];
+  prices[0] = 3;
+  int cost[5] = {4,2,7,4,12};
+
+  //          STRINGS
+  //last char is 0, string terminator
+  const char *name[7] = {"O", "a", "k", "l", "e", "y"};
+  char name2[5] = "Yuli";
+  printf("%s \n",*name);
 }
